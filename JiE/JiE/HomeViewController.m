@@ -83,7 +83,7 @@
     cell.lbluserName.text = obj.username;
     cell.lblTitle.text = obj.title;
     cell.lblDescription.text = obj.jieDescription;
-    cell.lblLastSeen.text = obj.time;
+   // cell.lblLastSeen.text = obj.time;
     
     if (obj.jieImageURL.length>0) {
         dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
