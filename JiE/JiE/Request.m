@@ -190,6 +190,7 @@
         [body appendData:[NSData dataWithData:jObj.profilepic]];
         [body appendData:[[NSString stringWithFormat:@"\r\n--%@--\r\n", boundary] dataUsingEncoding:NSUTF8StringEncoding]];
     }
+    NSLog(@"test");
     [postRequest setHTTPBody:body];
     [self createConnection:postRequest];
 }
